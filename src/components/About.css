@@ -1,0 +1,133 @@
+
+.section-padding {
+  padding: 100px 25px;
+}
+
+.section-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.about {
+  background: var(--section-bg);
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+.section-heading > span {
+  color: #00c6e8;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.section-heading h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.8rem;
+  margin: 12px 0;
+}
+
+.section-heading h2 span {
+  color: #00c6e8;
+}
+
+.section-heading p {
+  color: var(--secondary-text);
+  line-height: 1.7;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 65px;
+  align-items: center;
+}
+
+.about-text h3 {
+  font-size: 1.7rem;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  color: var(--secondary-text);
+  line-height: 1.9;
+  margin-bottom: 18px;
+  font-size: 0.98rem;
+}
+
+.about-highlight {
+  margin-top: 30px;
+  padding: 20px;
+  border-left: 4px solid #00c6e8;
+  background: rgba(0, 198, 232, 0.07);
+  color: var(--text-color);
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+.about-highlight span {
+  display: block;
+  color: var(--secondary-text);
+  font-size: 0.85rem;
+  margin-bottom: 7px;
+}
+
+.about-interests {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.interest-card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 25px 20px;
+  background: var(--bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  transition: border-color 0.3s ease;
+}
+
+.interest-card:hover {
+  border-color: #00c6e8;
+}
+
+.interest-icon {
+  color: #00c6e8;
+}
+
+.interest-card h4 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.interest-card p {
+  color: var(--secondary-text);
+  font-size: 0.88rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 850px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 550px) {
+  .section-padding {
+    padding: 75px 20px;
+  }
+
+  .section-heading h2 {
+    font-size: 2.2rem;
+  }
+
+  .about-interests {
+    grid-template-columns: 1fr;
+  }
+}

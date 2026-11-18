@@ -1,0 +1,65 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  font-family: 'Manrope', sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+body.dark {
+  --bg-color: #080f1d;
+  --section-bg: #101c2e;
+  --nav-bg: rgba(8, 15, 29, 0.94);
+  --text-color: #f1f5f9;
+  --secondary-text: #a5b4c8;
+  --border-color: rgba(148, 163, 184, 0.15);
+}
+
+body.light {
+  --bg-color: #f8fafc;
+  --section-bg: #ffffff;
+  --nav-bg: rgba(255, 255, 255, 0.94);
+  --text-color: #172033;
+  --secondary-text: #64748b;
+  --border-color: rgba(15, 23, 42, 0.12);
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+button {
+  font-family: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Prevent section headings from hiding behind the fixed navbar */
+section {
+  scroll-margin-top: 90px;
+}
