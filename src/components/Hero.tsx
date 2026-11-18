@@ -81,7 +81,7 @@ const Hero = () => {
         >
           <div className="hero-image-circle">
             <img
-              src="/profile.jpg"
+              src="https://res.cloudinary.com/tykvjzok/image/upload/v1795044652/styled-image_foojdd.png"
               alt="David Chinomso Ikechukwu"
             />
           </div>
