@@ -6,7 +6,6 @@ import {
   X,
   Sun,
   Moon,
-  Code2,
 } from "lucide-react";
 import "./Navbar.css";
 
@@ -35,9 +34,13 @@ const Navbar = ({ theme, toggleTheme }: NavbarProps) => {
 
         {/* Logo */}
         <a href="#home" className="navbar-logo" onClick={closeMenu}>
-          <Code2 size={26} />
-          <span>David<span className="logo-highlight">.</span></span>
-        </a>
+  <img
+    src="/favicon.png"
+    alt="David logo"
+    className="navbar-logo-image"
+  />
+  <span>David<span className="logo-highlight">.</span></span>
+</a>
 
         {/* Desktop Navigation */}
         <div className={`nav-links ${menuOpen ? "active" : ""}`}>
