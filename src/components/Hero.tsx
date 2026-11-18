@@ -2,9 +2,12 @@
 import { motion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { useState } from "react";
 import "./Hero.css";
 
 const Hero = () => {
+
+const [imageLoaded, setImageLoaded] = useState(false);  
   return (
     <section className="hero" id="home">
       <div className="hero-container">
@@ -80,11 +83,15 @@ const Hero = () => {
           transition={{ duration: 0.9 }}
         >
           <div className="hero-image-circle">
-            <img
-              src="https://res.cloudinary.com/tykvjzok/image/upload/v1795044652/styled-image_foojdd.png"
-              alt="David Chinomso Ikechukwu"
-            />
-          </div>
+  <motion.img
+    src="https://res.cloudinary.com/tykvjzok/image/upload/v1795044652/styled-image_foojdd.png"
+    alt="David Chinomso Ikechukwu"
+    onLoad={() => setImageLoaded(true)}
+    initial={{ opacity: 0 }}
+    animate={{ opacity: imageLoaded ? 1 : 0 }}
+    transition={{ duration: 0.8, ease: "easeOut" }}
+  />
+</div>
         </motion.div>
       </div>
 
